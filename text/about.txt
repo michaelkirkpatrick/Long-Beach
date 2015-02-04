@@ -1,0 +1,12 @@
+# About
+
+<span class="breadcrumb">[MEK Studios](/) &raquo; About</span>
+
+MEK Studios was created in January 2011 as an umbrella for all the various projects I work on. Allow me to introduce myself; my name is Michael Kirkpatrick. I use my middle initial E to try and stand out amongst all the other Michael Kirkpatrick's out there. I've been creating websites since I ran for student government in college in 2005. A few other interesting tidbits:
+
+* I love photography and created a [photography website](http://www.mekphoto.com) that is admittedly a little out of date. I still love taking photos.
+* I've worked on a lot of small web projects including my own startup, [Campus Loop](http://campusloop.com).
+* If you need someone to help you develop a small website, take photos or do some basic graphic design work, I'm available for hire. [Get in touch](mailto:michael@mekstudios.com).
+* I'm currently employed by Northrop Grumman (NG) and have spent a lot of time working on the [James Webb Space Telescope](http://www.jwst.nasa.gov). I've also helped setup a maker space at NG, called [FabLab](http://youtu.be/UmUaqH3rmow).
+
+I'm passionate about innovation, design, and culture.

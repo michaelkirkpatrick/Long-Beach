@@ -1,0 +1,25 @@
+# Privacy Policy
+
+<span class="breadcrumb">[MEK Studios](/) &raquo; Privacy Policy</span>
+
+**Effective February 3, 2015**
+
+MEK Studios is a blog and web portfolio run by Michael E. Kirkpatrick.
+
+This Privacy Policy describes how and when MEK Studios (“we”, “us”, or “our”) collects, uses, and shares your information when you use our Services.
+
+## Information collection and use
+
+When your web browser requests a page from MEK Studios, your computer is talking to our servers. Our servers log this basic information, including your IP address, whenever you load a page. Additionally, we use javascript provided by [Google Analytics](http://www.google.com/analytics/learn/privacy.html?rd=2) to track your interactions with our web pages.
+
+## Cookies
+
+Google Analytics may place cookies on your computer to track your browsing of the site.
+
+## How we use your information
+
+We use the information we collect to provide our Service and enhance MEK Studios for you. It's kinda fun to know when and how many people view the site. Currently I'd wager a majority of the hits are from me.
+
+## Changes to this policy
+
+If we make a change to this policy that we deem material, we will notify you and post a notification on our Service.

@@ -1,0 +1,5 @@
+# Restrict access to "admin" folder
+AuthType Basic
+AuthName "restricted area"
+AuthUserFile  /PATH/admin/.htpasswd
+require valid-user
