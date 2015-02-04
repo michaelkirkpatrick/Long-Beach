@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Long-beach by mk14</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Long-beach</h1>
+        <p>A blogging engine with attention to attribution.</p>
+
+        <p class="view"><a href="https://github.com/mk14/Long-Beach">View the Project on GitHub <small>mk14/Long-Beach</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/mk14/Long-Beach/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/mk14/Long-Beach/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/mk14/Long-Beach">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="readme" class="anchor" href="#readme" aria-hidden="true"><span class="octicon octicon-link"></span></a>README</h1>
+
+<p>Long Beach is a blogging engine I created to host my personal blog and website. The blogging engine is a little different than traditional blogs. It allows you credit authors and sources in link posts. For example, if you're posting a link to an article by Walt Mossberg at Re/code, you can add the link to his article and the attribution will appear as a part of the post. This additional attribution metadata also allows you to search the blog by author or source.</p>
+
+<p>That said, this is also a traditional blogging engine. You can schedule posts or back-date posts. You can write in <a href="http://daringfireball.net/projects/markdown/">Markdown</a> or pure HTML. The code will prompt you to automatically generate an updated sitemap after each post which you can link to in Google's Webmaster Tools.</p>
+
+<p>When it comes to logos and your identity, drop in your logo and 2x retina logo which will look great on retina screens. There is also hooks for icons -- all kinds of icons -- that you will find useful.</p>
+
+<h2>
+<a id="languages" class="anchor" href="#languages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Languages</h2>
+
+<p>This project uses the following languages/technologies:</p>
+
+<ul>
+<li>PHP</li>
+<li>MySQL</li>
+<li>HTML</li>
+<li>CSS</li>
+<li>Javascript</li>
+<li>Markdown</li>
+<li>SmartyPants</li>
+</ul>
+
+<h2>
+<a id="database" class="anchor" href="#database" aria-hidden="true"><span class="octicon octicon-link"></span></a>Database</h2>
+
+<p>This project is configured to run off of a MySQL database. The SQL to create the necessary tables and data structures can be found in /SQL-setup.sql.</p>
+
+<h2>
+<a id="edits-required" class="anchor" href="#edits-required" aria-hidden="true"><span class="octicon octicon-link"></span></a>Edits Required</h2>
+
+<h3>
+<a id="adminhtaccess" class="anchor" href="#adminhtaccess" aria-hidden="true"><span class="octicon octicon-link"></span></a>/admin/.htaccess</h3>
+
+<p>You will need to update the path to the .htpasswd file</p>
+
+<h3>
+<a id="adminhtpasswd" class="anchor" href="#adminhtpasswd" aria-hidden="true"><span class="octicon octicon-link"></span></a>/admin/.htpasswd</h3>
+
+<p>Add a username and hashed password to the .htpasswd file. I suggest you generate your username and password using this <a href="http://aspirine.org/htpasswd_en.html">htpasswd generator</a>.</p>
+
+<h3>
+<a id="commondbconnectphp" class="anchor" href="#commondbconnectphp" aria-hidden="true"><span class="octicon octicon-link"></span></a>/common/dbconnect.php</h3>
+
+<p>Update the login information to your database. </p>
+
+<h3>
+<a id="commonfooterphp" class="anchor" href="#commonfooterphp" aria-hidden="true"><span class="octicon octicon-link"></span></a>/common/footer.php</h3>
+
+<p>Add your personal information and email address.</p>
+
+<h3>
+<a id="commongoogle-analyticsphp" class="anchor" href="#commongoogle-analyticsphp" aria-hidden="true"><span class="octicon octicon-link"></span></a>/common/google-analytics.php</h3>
+
+<p>Add your Google Analytics account ID.</p>
+
+<h3>
+<a id="images" class="anchor" href="#images" aria-hidden="true"><span class="octicon octicon-link"></span></a>Images</h3>
+
+<ul>
+<li>
+<strong>/favicon.ico</strong> -- Create and upload your own favicon.</li>
+<li>
+<strong>/images/icons/</strong> -- Create icons for your site. The icons needed are referenced in /common/header-links.php</li>
+<li>
+<strong>/images/</strong> -- Background image for top. I used MEK-Studios.png and MEK-Studios_2x.png. Both are referenced in /css/notional.css.</li>
+</ul>
+
+<h3>
+<a id="removing-references-to-mek-studios" class="anchor" href="#removing-references-to-mek-studios" aria-hidden="true"><span class="octicon octicon-link"></span></a>Removing references to MEK Studios</h3>
+
+<p>MEK Studios is referenced throughout. You'll likely want to include your own website. This includes references to MEK Studios in text as well as URL references.</p>
+
+<h3>
+<a id="text-files" class="anchor" href="#text-files" aria-hidden="true"><span class="octicon octicon-link"></span></a>Text Files</h3>
+
+<p>I included links to /about/ and /privacy/. Both of these pages are generated by /text.php which takes its cues from /.htaccess redirects and uses text files in/text/.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/mk14">mk14</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
