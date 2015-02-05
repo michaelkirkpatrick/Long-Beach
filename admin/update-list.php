@@ -11,13 +11,13 @@
 <p><a href="/admin/">Admin Home</a> &raquo; Update Post</p>
 <?
 include('../common/dbconnect.php');
-$query = "SELECT url, title FROM blog ORDER BY id DESC";
+$query = "SELECT url, title, published_time FROM blog ORDER BY published_time DESC";
 $result = $mysqli->query($query);
-echo '<ul>' . "\n";
+echo '<p>' . "\n";
 while($row = $result->fetch_array(MYSQLI_ASSOC)){
-	echo '<li><a href="/admin/update-post.php?url=' . $row['url'] . '">' . $row['title'] . '</a></li>' . "\n";
+	echo '' . date('M j, Y', $row['published_time']) . ' &ndash; <a href="/admin/update-post.php?url=' . $row['url'] . '">' . $row['title'] . '</a><br/>' . "\n";
 }
-echo '</ul>' . "\n";
+echo '</p>' . "\n";
 ?>
 </div>
 </body>
