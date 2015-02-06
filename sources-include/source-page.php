@@ -4,7 +4,9 @@ echo '<p class="breadcrumb"><a href="/">Blog</a> &raquo; <a href="/source/">Sour
 
 // Query
 $current_time = time();
-$source_query = "SELECT title, author, published_time, url, published_month, published_year FROM blog WHERE source='$source' AND published_time<$current_time";
+$db_source = $mysqli->real_escape_string($source);
+
+$source_query = "SELECT title, author, published_time, url, published_month, published_year FROM blog WHERE source='$db_source' AND published_time<$current_time";
 $source_result = $mysqli->query($source_query);
 
 // Header
