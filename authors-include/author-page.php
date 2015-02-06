@@ -4,7 +4,9 @@ echo '<p class="breadcrumb"><a href="/">Blog</a> &raquo; <a href="/author/">Auth
 
 // Query
 $current_time = time();
-$author_query = "SELECT title, source, published_time, url, published_month, published_year FROM blog WHERE author='$author' AND published_time<$current_time ORDER BY published_time DESC";
+$db_author = $mysqli->real_escape_string($author);
+
+$author_query = "SELECT title, source, published_time, url, published_month, published_year FROM blog WHERE author='$db_author' AND published_time<$current_time ORDER BY published_time DESC";
 $author_result = $mysqli->query($author_query);
 
 // Header
