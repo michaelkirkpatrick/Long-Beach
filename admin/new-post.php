@@ -53,7 +53,7 @@ if(isset($_POST['submit'])){
 		
 		// Author Name Cleanup
 		# We want to know if the Author's name should be in Title Case
-		if($capitalizeAuthor){
+		if($capitalizeAuthor == 'capitalize'){
 			$author = ucwords(strtolower($author));
 		}
 		
