@@ -25,6 +25,7 @@ if(isset($_POST['submit'])){
 	$link = $_POST['link'];
 	$title = $_POST['title'];
 	$author = $_POST['author'];
+	$capitalizeAuthor = $_POST['capitalizeAuthor'];
 	$source = $_POST['source'];
 	$text = $_POST['text'];
 	$post_time = $_POST['post_time'];
@@ -49,6 +50,12 @@ if(isset($_POST['submit'])){
 		$db_author = $author;
 		$db_source = $source;
 		$db_text = $text;
+		
+		// Author Name Cleanup
+		# We want to know if the Author's name should be in Title Case
+		if($capitalizeAuthor){
+			$author = ucwords(strtolower($author));
+		}
 		
 		// Published Date/Time
 		if($post_time == 'now'){
@@ -237,7 +244,10 @@ if(isset($_POST['submit'])){
         </tr>
         <tr>
         	<td class="align-right">Author:</td>
-          	<td><input type="text" name="author" class="input-text" value="<? echo htmlspecialchars($author); ?>" placeholder="Michael E. Kirkpatrick" required /></td>
+          	<td>
+                  <input type="text" name="author" class="input-text" value="<? echo htmlspecialchars($author); ?>" placeholder="Michael E. Kirkpatrick" required /><br/>
+                  <input type="checkbox" name="capitalizeAuthor" value="capitalize" checked="checked" /> Title case
+                </td>
         </tr>
         <tr>
         	<td class="align-right">Source:</td>
